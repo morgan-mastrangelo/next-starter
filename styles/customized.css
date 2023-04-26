@@ -1,0 +1,36 @@
+.custom-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    animation: scale_anim .3s;
+}
+
+.custom-profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+    overflow: hidden;
+    animation: scale_anim .3s;
+}
+
+.custom-input {
+    font-size: 16px;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+div:has(>.custom-input:focus) {
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+@keyframes scale_anim {
+    0% { transform: scale(0) }
+    40% { transform: scale(1.1) }
+    100% { transform: scale(1) }
+}
